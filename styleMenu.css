@@ -1,0 +1,153 @@
+#menu, #links{
+  display: none;
+}
+
+@media(max-width: 960px){
+  
+html{
+ scroll-behavior: smooth;
+}
+
+#menu, #links{
+  display: none;
+}
+
+hearder{
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#menu{
+  height: 4em;
+  width: 4em;
+  background-color: #006c1f;
+  clip-path: circle(50% at center);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0.5em;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#links{
+  position: fixed;
+  overflow: hidden;
+  height: 0em;
+  width: 3em;
+  bottom: 3em;
+  right: 1em;
+  padding-bottom: 1em;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+@keyframes entra{
+  100%{
+    height: 14em;
+  }
+}
+
+.linha{
+  width: 2em;
+  height: 0.2em;
+  background-color: white;
+  margin-bottom: 0.5em;
+  position: relative;
+  bottom: -0.2em;
+}
+
+  @keyframes apagar{
+    0%{
+      opacity: 100%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
+
+  @keyframes meio{
+     0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }
+
+    @keyframes sair{
+    0%{
+      height: 14em;
+    }
+    100%{
+      height: 0em;
+    }
+  }
+
+  @keyframes linha{
+    100%{
+      transform: rotate(45deg) translateY(1em)
+    }
+  }
+
+    @keyframes linha2{
+    100%{
+      transform: rotate(-45deg) translateY(-1em)
+    }
+  }
+
+  @keyframes icon{
+    100%{
+      transform: rotate(360deg) translateX(0.7em)
+    }
+  }
+
+#Inicio{
+  height: 2em;
+  width: 2em;
+}
+
+.dev{
+  height: 1.8em;
+  width: 1.8em;
+}
+
+@keyframes voltar{
+  0%{
+    transform: rotate(45deg) translateY(1em)
+  }
+  100%{
+    transform: rotate(0deg) translateY(0)
+  }
+}
+
+@keyframes voltar2{
+  0%{
+    transform: rotate(-45deg) translateY(-1em)
+  }
+  100%{
+    transform: rotate(0deg) translateY(0)
+  }
+}
+
+@keyframes voltar3{
+  0%{
+    transform: rotate(0deg) translateX(0.7em)
+  }
+  100%{
+    transform: rotate(-360deg) translateX(0em)
+  }
+}
+
+}

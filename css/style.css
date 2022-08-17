@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+body {
+  background: #01160F;
+  color: white;
+  font-family: "Ubuntu";
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/*========== FORMULÁRIO ========== */
+#contact .formulario {
+  background: linear-gradient(180deg, #023E13 90.54%, #006C1F 100%);
+  padding: 30px;
+  padding-left: 8%;
+  min-height: 60%;
+}
+
+#contact .formulario .section-1 {
+  padding: 0.625rem;
+  margin-top: 8%;
+  font-weight: bold;
+}
+
+#contact .formulario .section-2 {
+  display: flex;
+}
+
+#contact .formulario .section-2 form {
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .formulario .section-2 form label {
+  margin-block: 1.5625rem;
+  text-transform: uppercase;
+}
+
+#contact .formulario .section-2 input, textarea {
+  padding: 3px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 0.625rem;
+}
+
+#contact .formulario .section-2 #enviar {
+  margin-top: 10%;
+  background: #000000;
+  color: #006C1F;
+  border-radius: 90px;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .formulario .section-2 #enviar:hover {
+  background-color: #050505;
+}
+
+#contact .formulario .section-2 form textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+#contact .formulario .section-2 form textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+/*==========INFORMAÇÕES========== */
+#contact .informacoes {
+  background: linear-gradient(180deg, #050505 83.42%, #023E13 100%);
+  padding: 30px;
+  padding-left: 8%;
+  min-height: 50%;
+}
+
+#contact .informacoes .section-1 {
+  padding: 0.9375rem;
+  margin-top: 8%;
+}
+
+#contact .informacoes .section-1 h1,
+#contact .informacoes .section-1 span {
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#contact .informacoes .section-2 {
+  padding: 0.9375rem;
+  margin-top: 3.75rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#contact .informacoes .section-2 span {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .informacoes .section-2 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#contact .informacoes button {
+  margin-inline: auto;
+  background-color: #023E13;
+  border: none;
+  border-radius: 90px;
+  max-width: 200px;
+  padding: 10px;
+}
+
+#contact .informacoes button section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#contact .informacoes button span {
+  color: white;
+  font-weight: bold;
+}
+
+/*========== RESPONSIVO========== */
+@media (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
+  #contact {
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-radius: 12px;
+  }
+  /* ============== FORMULÁRIO ============== */
+  #contact .formulario {
+    background: linear-gradient(180deg, #023E13 80.06%, rgba(0, 108, 31, 0.61) 100%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .formulario .section-1 {
+    padding-left: initial;
+    margin-top: 15%;
+    color: white;
+  }
+  #contact .formulario .section-2 form {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .formulario .section-2 form label {
+    display: flex;
+    font-weight: 500;
+    margin-left: 10%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  #contact .formulario .section-2 form input, textarea {
+    max-width: 100%;
+    margin-left: 10%;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+  }
+  #contact .formulario .section-2 form textarea:focus,
+input:focus {
+    outline: 0;
+  }
+  /* ============== INFORMAÇÕES ============== */
+  #contact .informacoes {
+    background: linear-gradient(180.13deg, #000000 78.41%, rgba(0, 204, 136, 0) 187.48%, #00CC88 187.48%);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  #contact .informacoes .section-1 {
+    display: flex;
+    margin-top: 15%;
+    padding: 1.875rem;
+  }
+  #contact .informacoes .section-1 h1,
+#contact .informacoes .section-1 span {
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #contact .informacoes .section-1 h1 {
+    font-size: 48px;
+  }
+  #contact .informacoes .section-2 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #contact .informacoes .section-2 span {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  #contact .informacoes .section-2 a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  #contact .informacoes button {
+    margin-inline: auto;
+    background-color: #023E13;
+    border: none;
+    border-radius: 90px;
+    max-width: 200px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #contact .informacoes button:hover {
+    background-color: #004810;
+    transition: 0.2s ease-in-out;
+  }
+  #contact .informacoes button section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  #contact .informacoes button span {
+    color: white;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1024px) {
+  #contact {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+    --nav-height: 5rem; 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: inline-block;
+    background-color:#000000;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+span {
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*=====NAVIGATION====*/
+header {
+    background-color: black;
+    display: flex;
+    margin-inline: 1.5rem;
+    margin-top: 2%;
+}
+
+header .section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1.logotipo {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+header .section-2 {
+    display: none;
+}
+
+/*=====MAIN=====*/
+
+.main {
+    background-color: black;
+    margin-top: 10%;
+    text-align: left;
+    display: flex;
+}
+
+.main .section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section-1 .title,
+.subtitle,
+.p-dv {
+    margin-inline: 1.5rem;
+}
+
+.main .section-1 .title {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.main .section-1 .title svg {
+    width: 70px;
+    margin-left: 4px;
+}
+
+.main .section-1 .subtitle {
+    font-weight: 500;
+    margin-top: 8px;
+    color: #006c1f;
+    font-size: 24px;
+}
+
+.main .section-1 .p-dv {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.main .section-1 .btn-mn {
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 3.125rem;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    background-color: #006c1f;
+    border-radius: 12px;
+    box-shadow: 15px 10px white;
+}
+
+.main .section-1 .btn-mn a {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.main .section-2 svg {
+    display: none;
+}
+
+/*=====ABOUT=====*/
+.about {
+    width: 100%;
+    margin-top: 8%;
+    background-color: #141414;
+    display: inline-block;
+}
+
+.about .Sobre {
+    margin-top: 8%;
+    margin-inline: 1.5rem;
+}
+
+.about .Sobre h1 {
+    color: #006c1f;
+    font-size: 3rem;
+    margin-bottom: 1%;
+}
+
+.about .Quem-somos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.about .Quem-somos h2 {
+    margin-top: 2rem;
+    color: #006c1f;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.about .Quem-somos h4 {
+    width: 85%;
+    font-weight: 400;
+    font-size: 12px;
+    margin-block: 2rem;
+    color: white;
+    font-size: 24px;
+}
+
+.about .div-ofc {
+    margin-top: -60px;
+}
+
+/*====PARCERIA====*/
+.Parceria {
+    background: linear-gradient(179.21deg, #050505 85.64%, rgba(5, 5, 5, 0) 99.32%);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+}
+
+.Parceria .section-1 {
+    margin-top: 2%;
+}
+
+.Parceria .section-1 h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.Parceria .caixa {
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    min-height: 255px;
+    margin-block: 5%;
+}
+
+.Parceria .section-2 h2 {
+    font-size: 28px;
+}
+
+.Parceria .section-2 p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.Parceria .section-2 h4 {
+    font-size: 18px;
+}
+
+.Parceria .section-2 h4,
+p {
+    margin-top: 2%;
+}
+
+.Parceria .section-2 {
+    text-align: center;
+}
+
+.Parceria .section-2 h4 {
+    color: #007bf1;
+}
+
+.Parceria .section-2 button {
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #415aff;
+    text-align: center;
+    padding: 10px 52px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px rgb(255, 255, 255);
+}
+
+/*=====FOOTER=====*/
+footer {
+    background: linear-gradient(180deg, #0d0d0d 83%, #006c1f96 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+footer .section-1,
+.section-2,
+.section-3 {
+    margin-top: 2%;
+}
+
+footer .section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer .section-1 p {
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+footer .section-2 {
+    display: flex;
+    gap: 65px;
+}
+
+footer .section-3 {
+    margin-bottom: 15%;
+}
+
+footer .section-3 h1 {
+    color: white;
+    margin-top: 2%;
+    text-align: center;
+}
+
+/*====RESPONSIVO=====*/
+@media (min-width: 412px) {
+    .Parceria .section-2 h2 {
+            font-size: 32px;
+        }
+    
+        .Parceria .section-2 p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    
+        .Parceria .section-2 h4 {
+            font-size: 21px;
+        }
+}
+
+@media (min-width: 1024px) {
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    margin-top: initial;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 80px;
+}
+
+header .section-1 {
+    margin-left: 1.5rem;
+}
+
+header .section-2 {
+    margin-top: initial;
+    display: initial;
+}
+
+/*=====NAVIGATION====*/
+.bx {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #006c1f;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 8px 5px rgb(255, 255, 255);
+}
+
+/*====MAIN====*/
+.main {
+    margin-top: 10%;
+    text-align:left;
+    display: flex;
+}
+
+.main .section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section-1 .title {
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    padding: 5px;
+    margin-left: 60px;
+}
+
+.main .section-1 .title svg {
+    width: initial;
+    display: initial;
+    margin: 0;
+}
+
+.main .section-1 .subtitle {
+    font-weight: 500;
+    margin-left: 65px;
+    margin-top: 8px;
+    color: #006c1f;
+    font-size: 29px;
+}
+
+.main .section-1 .p-dv {
+    font-weight: bold;
+    margin-left: 66px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+.main .section-1 .botao .btn-mn {
+    width: 14rem;
+    height: 4rem;
+    font-size: 30px;
+}
+
+.main .section-2 svg {
+    display: initial;
+    width: 360px;
+}
+
+.main .section-2 {
+    position: absolute;
+    top: 44%;
+    left: 45%;
+}
+
+.und-dv{
+    width: 34.5rem;
+    margin-top: -13px;
+    margin-left: 65px;
+    background-color: #006c1f;
+    height: 2px;
+    border: 2px solid #006c1f;
+}
+
+.icon{
+    margin-top: -250px;
+    margin-left: 90%;
+    width: 50rem;
+    height: 500px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+body::-webkit-scrollbar-track {
+    background: white;       
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #006c1f;    
+    border-radius: 20px;      
+    border: 3px solid white;  
+  }
+
+/*====ABOUT====*/
+.about .Sobre { 
+    text-align: center;
+}
+
+.about .Quem-somos h2 {
+    margin-left: 20px;
+}
+
+.about .Quem-somos h4 {
+    min-width: 750px;
+    font-weight: 400;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+/*CARROSSEL*/
+
+/*====PARCERIA====*/
+.Parceria .caixa {
+    width: initial;
+    font-size: initial;
+    min-width: 530px;
+}
+
+.Parceria .section-2 h2 {
+    font-size: 38px;
+}
+
+.Parceria .section-2 p {
+    font-size: 12px;
+}
+
+.Parceria .section-2 h4 {
+    font-size: 24px;
+}
+
+.Parceria .section-2 p {
+    font-size: 16px;
+}
+
+/*====FOOTER====*/
+footer .section-3 {
+    margin-bottom: initial;
+    margin-bottom: 5%;
+}
+
+}
+
+
+
