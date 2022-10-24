@@ -186,13 +186,6 @@ header .section-2 {
     min-height: 400px;
 }
 
-.tecnologias .blocos {
-    background-color: #2E2E2E;
-    border-radius: 5px;
-    padding: 100px 50px;
-    margin-block: 5%;
-}
-
 .tecnologias .section-1 {
     margin-top: 2%;
 }
@@ -204,45 +197,65 @@ header .section-2 {
     text-transform: uppercase;
 }
 
-.tecnologias .section-2 {
+.tecnologias .caixa .section-2 {
    display: flex;
+   flex-direction: column;
+   margin-inline: auto;
    gap: 18px;
 }
 
-.tecnologias .section-2 .blocos h1 {
-    text-align: left;
-    font-size: 15px;
-    font-weight: 700;
-    display: flex;
-}
-
-.tecnologias .techs-text {
+.tecnologias .blocos {
+    background-color: #2E2E2E;
+    border-radius: 5px;
+    padding: 50px 40px;
+    margin-block: 5%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
 }
 
-.tecnologias .techs-text .caixa-1 {
+.tecnologias .section-2 .blocos .image-title {
     display: flex;
-    gap: 18px;
+    justify-items: flex-start;
 }
 
-.tecnologias .techs-text .caixa-2 {
+.tecnologias .blocos .techs-text h3 {
+    font-size: 15px;
+}
+
+.tecnologias .blocos .techs-text-front .caixa-1,
+.tecnologias .blocos .techs-text-front .caixa-2 {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 28px;
 }
 
-.tecnologias .techs-text h3 {
-    font-size: 15px;
-    
+.tecnologias .blocos .techs-text-front .caixa-2 {
+    margin-top: 12px;
 }
+
+.tecnologias .blocos .techs-text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.tecnologias .blocos .techs-text .caixa-1 {
+    display: flex;
+    gap: 40px;
+}
+
+.tecnologias .blocos .techs-text .caixa-2 {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
 
 .tecnologias .blocos .techs-images {
     display: flex;
     justify-content: center;
-    gap: 8px;
-    margin-top: 15%;
+    gap: 22px;
+    margin-top: 2rem;
 }
 
 
@@ -450,25 +463,30 @@ body::-webkit-scrollbar-thumb {
 /*CARROSSEL*/
 
 /*====PARCERIA====*/
-.Parceria .caixa {
+.tecnologias .caixa {
     width: initial;
     font-size: initial;
     min-width: 530px;
 }
 
-.Parceria .section-2 h2 {
+.tecnologias .caixa .section-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.tecnologias .section-2 h2 {
     font-size: 38px;
 }
 
-.Parceria .section-2 p {
+.tecnologias .section-2 p {
     font-size: 12px;
 }
 
-.Parceria .section-2 h4 {
+.tecnologias .section-2 h4 {
     font-size: 24px;
 }
 
-.Parceria .section-2 p {
+.tecnologias .section-2 p {
     font-size: 16px;
 }
 
